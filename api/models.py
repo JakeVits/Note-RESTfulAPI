@@ -23,7 +23,7 @@ def set_profile(sender, instance, created, **kwargs):
 
 class Note(models.Model):
     owner = models.ForeignKey(User, models.CASCADE)
-    title = models.CharField(max_length=20, unique=True)
+    title = models.CharField(max_length=20)
     content = models.TextField(blank=True)
     c_date = models.DateTimeField(auto_now_add=True)
     u_date = models.DateTimeField(auto_now=True)
