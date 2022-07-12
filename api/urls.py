@@ -10,8 +10,8 @@ urlpatterns = [
     path('api/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/register/', views.RegisterAPI.as_view(), name='register'),
-    # path('api/login/', views.LoginAPI.as_view(), name='login'),
     path('api/logout/', views.logout_api, name='logout'),
+    # path('api/login/', views.LoginAPI.as_view(), name='login'),
     # path('api/logout/', knox_views.LogoutView.as_view(), name='logout'),
     # path('api/logoutall/', knox_views.LogoutView.as_view(), name='logoutall'),
 
